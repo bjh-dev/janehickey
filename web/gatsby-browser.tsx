@@ -7,6 +7,6 @@ export const wrapPageElement: GatsbyBrowser['wrapPageElement'] = ({
   element,
 }) => (
   <div className="bg-slate-50">
-    <Layout>{element}</Layout>;
+    <Layout>{element}</Layout>
   </div>
 );

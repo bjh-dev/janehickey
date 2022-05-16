@@ -2,11 +2,11 @@ import * as React from 'react';
 
 export default function ContactForm() {
   return (
-    <div className="mt-12 overflow-hidden">
-      <h2 className="mb-6 text-2xl font-bold text-red-400 underline decoration-slate-500 underline-offset-8">
+    <div className="mt-12 overflow-hidden rounded-md border border-slate-500 bg-slate-100 px-4 py-6">
+      <h2 className="mb-6  text-2xl font-bold text-red-400 underline decoration-slate-800 underline-offset-8">
         Contact
       </h2>
-      <p className="mb-4 font-serif text-slate-500">
+      <p className="mb-4 font-serif">
         If you would like to make contact with Jane, please provide your details
         and a brief message in the form below.
       </p>

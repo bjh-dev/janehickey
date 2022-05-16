@@ -6,7 +6,7 @@ import ContactForm from '../components/form';
 const presentations = [
   {
     link: `https://pure.ulster.ac.uk/ws/portalfiles/portal/77041351/CYW_and_ASC_Report.pdf`,
-    title: `Considering Autism Using a Strengths-Based Approach.`,
+    title: `Considering Autism: Using a Strengths-Based Approach.`,
     type: `Paper`,
     date: `3 Dec, 2020`,
     host: `University of Ulster`,
@@ -88,21 +88,27 @@ function HomePage() {
           content="Jane Hickey is an academic at Victoria University with research areas in disability, youth work, inclusive education and accessible employment"
         />
       </Helmet>
-      <header className="mb-6">
-        <h1 className="mb-6 text-4xl font-bold text-red-400 underline decoration-slate-500 underline-offset-8">
-          JANE HICKEY
+      <header className="mb-6 border-b-2 border-slate-500 pb-6 text-slate-500">
+        <h1 className="mb-4">
+          <span className="mb-2 text-4xl font-bold text-rose-500">
+            Jane Hickey
+          </span>
+          {` `}
+          <span className="block pt-2 font-serif text-sm uppercase no-underline">
+            Academic and Disability Advocate
+          </span>
         </h1>
-        <p className="mb-4 font-serif text-lg italic text-slate-500">
+        <p className="mb-4 text-xs text-slate-800">
+          PhD candidate, MEd, Grad Dip Experiential Learning, Bachelor of Youth
+          Work, Cert IV Disability, Cert IV TAA
+        </p>
+        <p className="mb-4 font-serif text-lg italic">
           Jane Hickey is an academic at Victoria University with research areas
           in disability, youth work, inclusive education and accessible
           employment
         </p>
-        <p className="border-b-2 border-red-400 pb-6 text-xs">
-          PhD candidate, MEd, Grad Dip Experiential Learning, Bachelor of Youth
-          Work, Cert IV Disability, Cert IV TAA
-        </p>
       </header>
-      <section className="font-serif text-slate-500">
+      <section className="font-serif text-slate-800">
         <p className="mb-4">
           Jane completed her undergraduate studies at Victoria University with a
           Bachelor of Youth Work in 2001. She began working during her studies,
@@ -128,11 +134,11 @@ function HomePage() {
           Assessment have given Jane a breadth of knowledge and skills which
           have been complemented by 12 years of industry experience.
         </p>
-        <p className="mb-4">
+        <p className="border-b-2 border-slate-500 pb-6">
           Jane is a PhD candidate currently researching the experiences of
           students with hidden disability in post compulsory education.
         </p>
-        <h2 className="mt-12 mb-6 text-2xl font-bold text-red-400 underline decoration-slate-500 underline-offset-8">
+        <h2 className="mt-12 mb-6 text-2xl font-bold text-rose-500 underline decoration-slate-800 underline-offset-8">
           Presentations
         </h2>
         <ul>
@@ -144,7 +150,7 @@ function HomePage() {
                 rel="noopener noreferrer"
                 className="group -mx-4 -my-2 block rounded-md px-4 py-2 hover:bg-slate-200"
               >
-                <h3 className="bg-inherit font-bold group-hover:underline">
+                <h3 className="mb-2 border-b border-slate-500 bg-inherit pb-2 text-lg font-bold leading-tight group-hover:underline">
                   {presentation.title}
                 </h3>
                 <div>
@@ -153,16 +159,16 @@ function HomePage() {
                   </span>
                 </div>
                 {presentation.authors && (
-                  <h4 className="mt-1 mb-2 font-sans text-xs">
+                  <h4 className="my-2 border-l-2 border-slate-500 bg-slate-200 p-2 font-sans text-xs">
                     Co-contributors:{` `}
                     {presentation.authors.map((author, index) => (
-                      <span className="italic">
-                        {(index ? `, ` : ``) + author}
-                      </span>
+                      <span>{(index ? `, ` : ``) + author}</span>
                     ))}
                   </h4>
                 )}
-                <p className="my-2 text-sm">{presentation.description}</p>
+                <p className="mt-2 mb-6 text-sm italic">
+                  {presentation.description}
+                </p>
               </a>
             </li>
           ))}
@@ -170,11 +176,11 @@ function HomePage() {
         <p className="my-8 flex font-sans font-bold">
           <a
             href="https://www.linkedin.com/in/janemhickey/"
-            className="group text-slate-500 after:content-['_↗'] hover:text-red-500"
+            className="group text-slate-800 after:content-['_↗'] hover:text-red-500"
           >
             <FaLinkedin className="mr-2 inline h-6 w-6" />
             {` `}
-            <span className="decoration-slate-600 decoration-2 underline-offset-4 group-hover:underline">
+            <span className="decoration-slate-800 decoration-2 underline-offset-4 group-hover:underline">
               LinkedIn Profile
             </span>
           </a>
