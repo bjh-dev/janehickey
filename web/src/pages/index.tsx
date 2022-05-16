@@ -105,7 +105,7 @@ function HomePage() {
         <p className="mb-4 font-serif text-lg italic">
           Jane Hickey is an academic at Victoria University with research areas
           in disability, youth work, inclusive education and accessible
-          employment
+          employment.
         </p>
       </header>
       <section className="font-serif text-slate-800">
@@ -121,8 +121,8 @@ function HomePage() {
           <li>Personal carer</li>
           <li>Educational support officer</li>
           <li>Respite and recreation worker</li>
-          <li>Management of disability day service</li>
           <li>Disability instructor.</li>
+          <li>Management of disability day service</li>
         </ul>
         <p className="mb-4">
           In 2010, Jane was given the opportunity to use her training, skills
