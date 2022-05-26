@@ -1,7 +1,7 @@
-import Layout from '@/components/layout';
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import { FaLinkedin } from 'react-icons/fa';
+import Layout from '../components/layout';
 import ContactForm from '../components/form';
 
 const presentations = [
