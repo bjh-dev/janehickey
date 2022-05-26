@@ -94,21 +94,31 @@ function HomePage() {
             Jane Hickey
           </span>
           {` `}
-          <span className="block pt-2 font-serif text-sm uppercase no-underline">
+          <span className="block pt-2 font-serif text-sm font-bold uppercase no-underline">
             Academic and Disability Advocate
           </span>
         </h1>
-        <p className="mb-4 text-xs text-slate-800">
+        <p className="my-4 border-l-2 border-slate-500 bg-slate-100 px-4 py-2 font-serif text-xs text-slate-700">
           PhD candidate, MEd, Grad Dip Experiential Learning, Bachelor of Youth
           Work, Cert IV Disability, Cert IV TAA
         </p>
-        <p className="mb-4 font-serif text-lg italic">
-          Jane Hickey is an academic at Victoria University with research areas
-          in disability, youth work, inclusive education and accessible
-          employment.
+        <p className="font-serif text-lg font-bold italic text-rose-500">
+          Jane Hickey is an Academic teaching scholar in the College of Arts
+          &amp; Education at{` `}
+          <a
+            href="https://www.vu.edu.au/contact-us/jane-hickey"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="break-word -mx-1 p-1 text-rose-500 transition delay-75 duration-100 ease-linear hover:bg-rose-500 hover:text-white"
+          >
+            Victoria University
+          </a>
+          {` `}
+          with research interests in disability, youth work, inclusive education
+          and accessible employment.
         </p>
       </header>
-      <section className="font-serif text-slate-800">
+      <section className="font-serif text-slate-500">
         <p className="mb-4">
           Jane completed her undergraduate studies at Victoria University with a
           Bachelor of Youth Work in 2001. She began working during her studies,
@@ -148,7 +158,7 @@ function HomePage() {
                 href={presentation.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group -mx-4 -my-2 block rounded-md px-4 py-2 hover:bg-slate-200"
+                className="group -mx-4 -my-2 block rounded-md px-4 py-2 transition delay-75 duration-100 ease-linear hover:bg-slate-200"
               >
                 <h3 className="mb-2 border-b border-slate-500 bg-inherit pb-2 text-lg font-bold leading-tight group-hover:underline">
                   {presentation.title}
@@ -159,7 +169,7 @@ function HomePage() {
                   </span>
                 </div>
                 {presentation.authors && (
-                  <h4 className="my-2 border-l-2 border-slate-500 bg-slate-200 p-2 font-sans text-xs">
+                  <h4 className="my-2 border-l-2 border-slate-500 bg-slate-100 p-2 font-sans text-xs">
                     Co-contributors:{` `}
                     {presentation.authors.map((author, index) => (
                       <span>{(index ? `, ` : ``) + author}</span>
@@ -176,7 +186,7 @@ function HomePage() {
         <p className="my-8 flex font-sans font-bold">
           <a
             href="https://www.linkedin.com/in/janemhickey/"
-            className="group text-slate-800 after:content-['_↗'] hover:text-red-500"
+            className="group text-slate-800 transition duration-100 ease-linear after:content-['_↗'] hover:text-red-500"
           >
             <FaLinkedin className="mr-2 inline h-6 w-6" />
             {` `}

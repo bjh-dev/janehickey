@@ -1,7 +1,13 @@
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
+    variants: {
+      borderColor: ['responsive', 'hover', 'focus', 'focus-within'],
+    },
     extend: {
+      zIndex: {
+        '-1': '-1',
+      },
       container: {
         center: true,
         padding: {

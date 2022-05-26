@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import * as React from 'react';
 
 export default function ContactForm() {
@@ -17,98 +18,93 @@ export default function ContactForm() {
           method="POST"
           className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
         >
-          <div>
+          <div className="group relative col-span-1 my-4 border-b-2 focus-within:border-red-500">
+            <input
+              type="text"
+              placeholder="Singh"
+              name="first-name"
+              className="block w-full appearance-none bg-white p-1 focus:outline-none"
+            />
             <label
               htmlFor="first-name"
-              className="block text-xs text-slate-900"
+              className="absolute -top-6 text-xs text-rose-500"
             >
-              First name
-              <div className="mt-1">
-                <input
-                  type="text"
-                  name="first-name"
-                  id="first-name"
-                  autoComplete="given-name"
-                  className="block w-full rounded-md border border-slate-300 py-3 px-4 shadow-sm outline-red-500 focus:border-red-500 focus:ring-red-500"
-                />
-              </div>
+              First Name
             </label>
           </div>
-          <div>
-            <label htmlFor="last-name" className="block text-xs text-slate-900">
-              Last name
-              <div className="mt-1">
-                <input
-                  type="text"
-                  name="last-name"
-                  id="last-name"
-                  autoComplete="family-name"
-                  className="block w-full rounded-md border border-slate-300 py-3 px-4 shadow-sm outline-red-500 focus:border-red-500 focus:ring-red-500"
-                />
-              </div>
+          <div className="group relative col-span-1 my-4 border-b-2 focus-within:border-red-500">
+            <input
+              type="text"
+              placeholder="Singh"
+              name="last-name"
+              className="block w-full appearance-none bg-white p-1 focus:outline-none"
+            />
+            <label
+              htmlFor="last-name"
+              className="absolute -top-6 text-xs text-rose-500"
+            >
+              Last Name
             </label>
           </div>
-          <div className="sm:col-span-2">
-            <label htmlFor="company" className="block text-xs text-slate-900">
+          <div className="group relative col-span-2 my-4 border-b-2 focus-within:border-red-500">
+            <input
+              type="text"
+              placeholder="ABC Group"
+              name="organisation"
+              className="block w-full appearance-none bg-white p-1 focus:outline-none"
+            />
+            <label
+              htmlFor="organisation"
+              className="group:focus:text-white absolute -top-6 text-xs text-rose-500"
+            >
               Organisation
-              <div className="mt-1">
-                <input
-                  type="text"
-                  name="company"
-                  id="company"
-                  autoComplete="organization"
-                  className="block w-full rounded-md border border-slate-300 py-3 px-4 shadow-sm outline-red-500 focus:border-red-500 focus:ring-red-500"
-                />
-              </div>
             </label>
           </div>
-          <div className="sm:col-span-2">
-            <label htmlFor="email" className="block text-xs text-slate-900">
+          <div className="group relative col-span-2 my-4 border-b-2 focus-within:border-red-500">
+            <input
+              type="text"
+              placeholder="sam@singh.net"
+              name="email"
+              className="block w-full appearance-none bg-white p-1 focus:outline-none"
+            />
+            <label
+              htmlFor="email"
+              className="absolute -top-6 text-xs text-rose-500"
+            >
               Email
-              <div className="mt-1">
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  autoComplete="email"
-                  className="block w-full rounded-md border border-slate-300 py-3 px-4 shadow-sm outline-red-500 focus:border-red-500 focus:ring-red-500"
-                />
-              </div>
             </label>
           </div>
-          <div className="sm:col-span-2">
+          <div className="group relative col-span-2 my-4 border-b-2 focus-within:border-red-500">
+            <input
+              type="tel"
+              placeholder="+61 (03) 9919 8944"
+              name="phone-number"
+              className="block w-full appearance-none bg-white p-1 focus:outline-none"
+            />
             <label
               htmlFor="phone-number"
-              className="block text-xs text-slate-900"
+              className="absolute -top-6 text-xs text-rose-500"
             >
               Phone Number
-              <input
-                type="text"
-                name="phone-number"
-                id="phone-number"
-                autoComplete="tel"
-                className="mt-1 block w-full rounded-md border border-slate-300 py-3 px-4 outline-red-500 focus:border-red-500 focus:ring-red-500"
-              />
             </label>
           </div>
-          <div className="sm:col-span-2">
-            <label htmlFor="message" className="block text-xs text-slate-900">
+          <div className="group relative col-span-2 my-4 border-b-2 focus-within:border-red-500">
+            <textarea
+              rows={5}
+              name="message"
+              className="block w-full appearance-none bg-white p-1 focus:outline-none"
+            />
+            <label
+              htmlFor="message"
+              className="absolute -top-6 text-xs text-rose-500"
+            >
               Message
-              <div className="mt-1">
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={8}
-                  className="block w-full rounded-md border border-slate-300 py-3 px-4 shadow-sm outline-red-500 focus:border-red-500 focus:ring-red-500"
-                  defaultValue=""
-                />
-              </div>
             </label>
           </div>
           <div className="sm:col-span-2">
             <button
               type="submit"
-              className="inline-flex items-center justify-center rounded-md border border-transparent bg-red-500 px-6 py-3 text-base text-white shadow-sm hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
+              className="inline-flex items-center justify-center rounded-md border border-transparent bg-red-500 px-4 py-2 text-base text-white shadow-sm hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
             >
               Send message
             </button>
