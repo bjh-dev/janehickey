@@ -15,9 +15,21 @@ export default function ContactForm() {
       <div className="mt-12">
         <form
           name="contact"
+          method="POST"
+          netlify-honeypot="bot-field"
           className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
           data-netlify="true"
         >
+          <input
+            type="hidden"
+            name="subject"
+            value="Contact has been made at janehickey.com! See what you've got!"
+          />
+          <p className="hidden">
+            <label>
+              Don’t fill this out if you’re human: <input name="bot-field" />
+            </label>
+          </p>
           <div className="group relative col-span-1 my-4 border-b-2 focus-within:border-red-500">
             <input
               type="text"
