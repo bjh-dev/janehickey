@@ -17,6 +17,7 @@ export default function ContactForm() {
           action="#"
           method="POST"
           className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
+          netlify
         >
           <div className="group relative col-span-1 my-4 border-b-2 focus-within:border-red-500">
             <input

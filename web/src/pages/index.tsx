@@ -1,3 +1,4 @@
+import Layout from '@/components/layout';
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import { FaLinkedin } from 'react-icons/fa';
@@ -49,7 +50,7 @@ const presentations = [
 ];
 function HomePage() {
   return (
-    <>
+    <Layout>
       <Helmet>
         <html lang="en" />
         <meta charSet="utf-8" />
@@ -67,7 +68,7 @@ function HomePage() {
             "image": "./public/janehickey.jpg",
             "jobTitle": "Academic teaching scholar",
             "name": "Jane Hickey",
-            "telephone": "(03) 9919 8944",
+            "telephone": "+61 (03) 9919 8944",
             "url": "http://www.janehickey.com"
           }
       `}
@@ -197,7 +198,7 @@ function HomePage() {
         </p>
       </section>
       <ContactForm />
-    </>
+    </Layout>
   );
 }
 
