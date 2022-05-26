@@ -14,8 +14,7 @@ export default function ContactForm() {
 
       <div className="mt-12">
         <form
-          action="#"
-          method="POST"
+          name="contact"
           className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
           netlify
         >
